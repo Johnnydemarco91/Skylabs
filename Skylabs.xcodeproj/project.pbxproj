@@ -25,6 +25,9 @@
 		B2E65E6C258984F20014F696 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5E258984F20014F696 /* URLSessionProtocol.swift */; };
 		B2E65E6D258984F20014F696 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5F258984F20014F696 /* ProviderProtocol.swift */; };
 		B2E65E74258985E00014F696 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E73258985E00014F696 /* NetworkError.swift */; };
+		B2E65E7C25898ACE0014F696 /* StarwarsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E7B25898ACE0014F696 /* StarwarsModels.swift */; };
+		B2E65E8025898B3F0014F696 /* StarwarsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E7F25898B3F0014F696 /* StarwarsServices.swift */; };
+		B2E65E8325898B740014F696 /* StarwarsLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E8225898B740014F696 /* StarwarsLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		B2E65E5E258984F20014F696 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		B2E65E5F258984F20014F696 /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
 		B2E65E73258985E00014F696 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B2E65E7B25898ACE0014F696 /* StarwarsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsModels.swift; sourceTree = "<group>"; };
+		B2E65E7F25898B3F0014F696 /* StarwarsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsServices.swift; sourceTree = "<group>"; };
+		B2E65E8225898B740014F696 /* StarwarsLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 				B278254425896CC9004F1721 /* Assets.xcassets */,
 				B278254625896CC9004F1721 /* LaunchScreen.storyboard */,
 				B278254125896CC7004F1721 /* Main.storyboard */,
+				B2E65E7925898A910014F696 /* Models */,
+				B2E65E7A25898A970014F696 /* Network */,
 				B2E65E4C258984F20014F696 /* NetworkLayer */,
 			);
 			path = Skylabs;
@@ -149,6 +157,23 @@
 				B2E65E5C258984F20014F696 /* StarWarsProtocol.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2E65E7925898A910014F696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E7B25898ACE0014F696 /* StarwarsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2E65E7A25898A970014F696 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E7F25898B3F0014F696 /* StarwarsServices.swift */,
+				B2E65E8225898B740014F696 /* StarwarsLogic.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,16 +246,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E65E8025898B3F0014F696 /* StarwarsServices.swift in Sources */,
 				B278254025896CC7004F1721 /* ViewController.swift in Sources */,
 				B2E65E66258984F20014F696 /* URLComponentsExtension.swift in Sources */,
 				B278253C25896CC7004F1721 /* AppDelegate.swift in Sources */,
 				B2E65E62258984F20014F696 /* HTTPMethod.swift in Sources */,
+				B2E65E8325898B740014F696 /* StarwarsLogic.swift in Sources */,
 				B2E65E69258984F20014F696 /* ServiceProtocol.swift in Sources */,
 				B2E65E61258984F20014F696 /* ParametersEncoding.swift in Sources */,
 				B2E65E6A258984F20014F696 /* StarWarsProtocol.swift in Sources */,
 				B2E65E65258984F20014F696 /* URLSessionProvider.swift in Sources */,
 				B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */,
 				B2E65E74258985E00014F696 /* NetworkError.swift in Sources */,
+				B2E65E7C25898ACE0014F696 /* StarwarsModels.swift in Sources */,
 				B2E65E6C258984F20014F696 /* URLSessionProtocol.swift in Sources */,
 				B2E65E63258984F20014F696 /* Task.swift in Sources */,
 				B2E65E67258984F20014F696 /* URLRequestExtension.swift in Sources */,
