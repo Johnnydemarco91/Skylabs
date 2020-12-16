@@ -13,6 +13,18 @@
 		B278254325896CC7004F1721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B278254125896CC7004F1721 /* Main.storyboard */; };
 		B278254525896CC9004F1721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B278254425896CC9004F1721 /* Assets.xcassets */; };
 		B278254825896CC9004F1721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B278254625896CC9004F1721 /* LaunchScreen.storyboard */; };
+		B2E65E61258984F20014F696 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E4F258984F20014F696 /* ParametersEncoding.swift */; };
+		B2E65E62258984F20014F696 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E50258984F20014F696 /* HTTPMethod.swift */; };
+		B2E65E63258984F20014F696 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E51258984F20014F696 /* Task.swift */; };
+		B2E65E65258984F20014F696 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E54258984F20014F696 /* URLSessionProvider.swift */; };
+		B2E65E66258984F20014F696 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E56258984F20014F696 /* URLComponentsExtension.swift */; };
+		B2E65E67258984F20014F696 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E57258984F20014F696 /* URLRequestExtension.swift */; };
+		B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E58258984F20014F696 /* DefaultConfigurator.swift */; };
+		B2E65E69258984F20014F696 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5A258984F20014F696 /* ServiceProtocol.swift */; };
+		B2E65E6A258984F20014F696 /* StarWarsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5C258984F20014F696 /* StarWarsProtocol.swift */; };
+		B2E65E6C258984F20014F696 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5E258984F20014F696 /* URLSessionProtocol.swift */; };
+		B2E65E6D258984F20014F696 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E5F258984F20014F696 /* ProviderProtocol.swift */; };
+		B2E65E74258985E00014F696 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E65E73258985E00014F696 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		B278254425896CC9004F1721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B278254725896CC9004F1721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B278254925896CC9004F1721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E65E4F258984F20014F696 /* ParametersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		B2E65E50258984F20014F696 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B2E65E51258984F20014F696 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B2E65E54258984F20014F696 /* URLSessionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		B2E65E56258984F20014F696 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		B2E65E57258984F20014F696 /* URLRequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		B2E65E58258984F20014F696 /* DefaultConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConfigurator.swift; sourceTree = "<group>"; };
+		B2E65E5A258984F20014F696 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		B2E65E5C258984F20014F696 /* StarWarsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsProtocol.swift; sourceTree = "<group>"; };
+		B2E65E5E258984F20014F696 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		B2E65E5F258984F20014F696 /* ProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		B2E65E73258985E00014F696 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +87,68 @@
 				B278254425896CC9004F1721 /* Assets.xcassets */,
 				B278254625896CC9004F1721 /* LaunchScreen.storyboard */,
 				B278254125896CC7004F1721 /* Main.storyboard */,
+				B2E65E4C258984F20014F696 /* NetworkLayer */,
 			);
 			path = Skylabs;
+			sourceTree = "<group>";
+		};
+		B2E65E4C258984F20014F696 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E58258984F20014F696 /* DefaultConfigurator.swift */,
+				B2E65E4D258984F20014F696 /* Enums */,
+				B2E65E55258984F20014F696 /* Extensions */,
+				B2E65E59258984F20014F696 /* Protocols */,
+				B2E65E53258984F20014F696 /* Provider */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B2E65E4D258984F20014F696 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E50258984F20014F696 /* HTTPMethod.swift */,
+				B2E65E4F258984F20014F696 /* ParametersEncoding.swift */,
+				B2E65E51258984F20014F696 /* Task.swift */,
+				B2E65E73258985E00014F696 /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B2E65E53258984F20014F696 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E54258984F20014F696 /* URLSessionProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		B2E65E55258984F20014F696 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E56258984F20014F696 /* URLComponentsExtension.swift */,
+				B2E65E57258984F20014F696 /* URLRequestExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2E65E59258984F20014F696 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E5F258984F20014F696 /* ProviderProtocol.swift */,
+				B2E65E5A258984F20014F696 /* ServiceProtocol.swift */,
+				B2E65E5E258984F20014F696 /* URLSessionProtocol.swift */,
+				B2E65E5B258984F20014F696 /* Extensions */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B2E65E5B258984F20014F696 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2E65E5C258984F20014F696 /* StarWarsProtocol.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +222,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B278254025896CC7004F1721 /* ViewController.swift in Sources */,
+				B2E65E66258984F20014F696 /* URLComponentsExtension.swift in Sources */,
 				B278253C25896CC7004F1721 /* AppDelegate.swift in Sources */,
+				B2E65E62258984F20014F696 /* HTTPMethod.swift in Sources */,
+				B2E65E69258984F20014F696 /* ServiceProtocol.swift in Sources */,
+				B2E65E61258984F20014F696 /* ParametersEncoding.swift in Sources */,
+				B2E65E6A258984F20014F696 /* StarWarsProtocol.swift in Sources */,
+				B2E65E65258984F20014F696 /* URLSessionProvider.swift in Sources */,
+				B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */,
+				B2E65E74258985E00014F696 /* NetworkError.swift in Sources */,
+				B2E65E6C258984F20014F696 /* URLSessionProtocol.swift in Sources */,
+				B2E65E63258984F20014F696 /* Task.swift in Sources */,
+				B2E65E67258984F20014F696 /* URLRequestExtension.swift in Sources */,
 				B278253E25896CC7004F1721 /* SceneDelegate.swift in Sources */,
+				B2E65E6D258984F20014F696 /* ProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
