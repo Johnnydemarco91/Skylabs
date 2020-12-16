@@ -10,10 +10,10 @@ struct People: Codable {
     let name: String
     let height: String
     let mass: String
-    let hair_color: String
-    let skin_color: String
-    let eye_color: String
-    let birth_year: String
+    let hairColor: String
+    let skinColor: String
+    let eyeColor: String
+    let birthYear: String
     let gender: String
     let homeworld: String
     let films: [String]
@@ -34,11 +34,11 @@ struct PeopleResponse<T: Codable>: Codable {
 
 struct Film: Codable {
         let title: String
-        let episode_id: Int
-        let opening_crawl: String
+        let episodeId: Int
+        let openingCrawl: String
         let director: String
         let producer: String
-        let release_date: String
+        let releaseDate: String
         let characters: [String]
         let planets: [String]
         let starships: [String]
@@ -54,10 +54,10 @@ struct Vehicle: Codable {
     let model: String
     let manufacturer: String
     let length: String
-    let max_atmosphering_speed: String
+    let maxAtmospheringSpeed: String
     let crew: String
     let passengers: String
-    let cargo_capacity: String
+    let cargoCapacity: String
     let consumables: String
-    let vehicle_class: String
+    let vehicleClass: String
 }

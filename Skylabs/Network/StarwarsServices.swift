@@ -5,6 +5,12 @@ struct PeopleService: StarWarsProtocol {
     var method: HTTPMethod = .get
     var path: [String] = ["people"]
     var queryItems: Parameters?
+
+    var jsonDecoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
 }
 
 struct FilmService: StarWarsProtocol {
@@ -12,6 +18,12 @@ struct FilmService: StarWarsProtocol {
     var method: HTTPMethod = .get
     var path: [String] = []
     var baseURL: URL
+
+    var jsonDecoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
 }
 
 struct VehicleService: StarWarsProtocol {
@@ -19,4 +31,10 @@ struct VehicleService: StarWarsProtocol {
     var method: HTTPMethod = .get
     var path: [String] = []
     var baseURL: URL
+
+    var jsonDecoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
 }

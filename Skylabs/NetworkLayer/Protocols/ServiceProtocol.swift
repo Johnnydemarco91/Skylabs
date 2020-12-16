@@ -28,6 +28,8 @@ protocol ServiceProtocol {
     
     /// Parameters of the request.
     var parameters: Parameters? { get }
+
+    var jsonDecoder: JSONDecoder { get }
 }
 
 extension ServiceProtocol {
@@ -68,5 +70,9 @@ extension ServiceProtocol {
     
     func isJsonRequired() -> Bool {
         self.method == .post || self.method == .put
+    }
+
+    var jsonDecoder: JSONDecoder {
+        JSONDecoder()
     }
 }

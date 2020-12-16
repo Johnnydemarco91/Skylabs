@@ -39,7 +39,7 @@ struct DefaultConfigurator {
             return completion(.failure(NetworkError.create(with: "Data not present")))
         }
         do {
-            let model = try JSONDecoder().decode(T.ResponseModel.self, from: data)
+            let model = try service.jsonDecoder.decode(T.ResponseModel.self, from: data)
             completion(.success(model))
         } catch let error {
             print(error)
