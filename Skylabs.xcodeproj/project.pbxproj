@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA38996C8D9A9AAD4C481A3 /* Pods_Skylabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF8EE12DC5E2EB9BECC27F2 /* Pods_Skylabs.framework */; };
+		B209D61C258ADD0C00257607 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209D61B258ADD0C00257607 /* UIImageView+.swift */; };
 		B2401064258A93DB001AAECE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401063258A93DB001AAECE /* MainViewController.swift */; };
 		B2401069258A947B001AAECE /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401068258A947B001AAECE /* FillButton.swift */; };
 		B240106E258A9561001AAECE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240106D258A9561001AAECE /* UIView+.swift */; };
@@ -17,6 +19,7 @@
 		B24010AD258AAE1A001AAECE /* StarWarsPeopleViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24010AB258AAE1A001AAECE /* StarWarsPeopleViewController+UITableView.swift */; };
 		B24010B2258AAE27001AAECE /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24010B0258AAE27001AAECE /* CollectionCell.swift */; };
 		B24010B3258AAE27001AAECE /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24010B1258AAE27001AAECE /* TableCell.swift */; };
+		B24010BB258AAED6001AAECE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B24010BA258AAED6001AAECE /* Podfile */; };
 		B278253C25896CC7004F1721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278253B25896CC7004F1721 /* AppDelegate.swift */; };
 		B278253E25896CC7004F1721 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278253D25896CC7004F1721 /* SceneDelegate.swift */; };
 		B278254525896CC9004F1721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B278254425896CC9004F1721 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FF8EE12DC5E2EB9BECC27F2 /* Pods_Skylabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skylabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB4856CB384116221C5954B /* Pods-Skylabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skylabs.release.xcconfig"; path = "Target Support Files/Pods-Skylabs/Pods-Skylabs.release.xcconfig"; sourceTree = "<group>"; };
+		B209D61B258ADD0C00257607 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		B2401063258A93DB001AAECE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2401068258A947B001AAECE /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
 		B240106D258A9561001AAECE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 		B24010AB258AAE1A001AAECE /* StarWarsPeopleViewController+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StarWarsPeopleViewController+UITableView.swift"; sourceTree = "<group>"; };
 		B24010B0258AAE27001AAECE /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		B24010B1258AAE27001AAECE /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		B24010BA258AAED6001AAECE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B278253825896CC7004F1721 /* Skylabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skylabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B278253B25896CC7004F1721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B278253D25896CC7004F1721 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 		B2E65E7B25898ACE0014F696 /* StarwarsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsModels.swift; sourceTree = "<group>"; };
 		B2E65E7F25898B3F0014F696 /* StarwarsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsServices.swift; sourceTree = "<group>"; };
 		B2E65E8225898B740014F696 /* StarwarsLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsLogic.swift; sourceTree = "<group>"; };
+		CE1CE4AC6DB79A72E02CBDE3 /* Pods-Skylabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skylabs.debug.xcconfig"; path = "Target Support Files/Pods-Skylabs/Pods-Skylabs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA38996C8D9A9AAD4C481A3 /* Pods_Skylabs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DD73D9435501AD04990BACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CE4AC6DB79A72E02CBDE3 /* Pods-Skylabs.debug.xcconfig */,
+				6FB4856CB384116221C5954B /* Pods-Skylabs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9398B1931B7F900ECBF9BB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF8EE12DC5E2EB9BECC27F2 /* Pods_Skylabs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2401061258A93C5001AAECE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +137,9 @@
 		B240106C258A9556001AAECE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B240106D258A9561001AAECE /* UIView+.swift */,
 				B240107B258A9838001AAECE /* String+.swift */,
+				B209D61B258ADD0C00257607 /* UIImageView+.swift */,
+				B240106D258A9561001AAECE /* UIView+.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -140,8 +167,11 @@
 		B278252F25896CC7004F1721 = {
 			isa = PBXGroup;
 			children = (
+				B24010BA258AAED6001AAECE /* Podfile */,
 				B278253A25896CC7004F1721 /* Skylabs */,
 				B278253925896CC7004F1721 /* Products */,
+				6DD73D9435501AD04990BACA /* Pods */,
+				9398B1931B7F900ECBF9BB14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B278254C25896CC9004F1721 /* Build configuration list for PBXNativeTarget "Skylabs" */;
 			buildPhases = (
+				450C5A6FF8791D4484AD920F /* [CP] Check Pods Manifest.lock */,
 				B278253425896CC7004F1721 /* Sources */,
 				B278253525896CC7004F1721 /* Frameworks */,
 				B278253625896CC7004F1721 /* Resources */,
+				48064CC3418E5BCD908BEF2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,12 +337,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24010BB258AAED6001AAECE /* Podfile in Resources */,
 				B278254825896CC9004F1721 /* LaunchScreen.storyboard in Resources */,
 				B278254525896CC9004F1721 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		450C5A6FF8791D4484AD920F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skylabs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48064CC3418E5BCD908BEF2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skylabs/Pods-Skylabs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skylabs/Pods-Skylabs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skylabs/Pods-Skylabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B278253425896CC7004F1721 /* Sources */ = {
@@ -333,6 +408,7 @@
 				B2E65E6A258984F20014F696 /* StarWarsProtocol.swift in Sources */,
 				B2E65E65258984F20014F696 /* URLSessionProvider.swift in Sources */,
 				B24010B2258AAE27001AAECE /* CollectionCell.swift in Sources */,
+				B209D61C258ADD0C00257607 /* UIImageView+.swift in Sources */,
 				B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */,
 				B2E65E74258985E00014F696 /* NetworkError.swift in Sources */,
 				B24010B3258AAE27001AAECE /* TableCell.swift in Sources */,
@@ -479,6 +555,7 @@
 		};
 		B278254D25896CC9004F1721 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1CE4AC6DB79A72E02CBDE3 /* Pods-Skylabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +575,7 @@
 		};
 		B278254E25896CC9004F1721 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB4856CB384116221C5954B /* Pods-Skylabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

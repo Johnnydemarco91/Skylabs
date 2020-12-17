@@ -1,4 +1,4 @@
-import UIKit
+import Kingfisher
 
 class TableCell: UITableViewCell {
 
@@ -64,7 +64,7 @@ class TableCell: UITableViewCell {
 
 extension TableCell {
     func configure(from people: People) {
-        // set avatar
+        avatarView.setPeopleAvatar(from: people.id)
 
         titleLabel.text = people.name
     }

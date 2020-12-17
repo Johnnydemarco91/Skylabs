@@ -47,9 +47,8 @@ class CollectionCell: UICollectionViewCell {
 
 extension CollectionCell {
     func configure(from people: People) {
-        // set avatar
+        avatarView.setPeopleAvatar(from: people.id)
         
         titleLabel.text = people.name
     }
 }
-
