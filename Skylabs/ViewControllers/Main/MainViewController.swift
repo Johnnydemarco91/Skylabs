@@ -54,8 +54,14 @@ class MainViewController: UIViewController {
 
 extension MainViewController {
     @objc
-    func tableButtonTapped() { }
-
+    func tableButtonTapped() {
+        navigationController?.pushViewController(StarWarsPeopleViewController(viewModel: .init(layout: .list)),
+                                                 animated: true)
+    }
+    
     @objc
-    func collectionButtonTapped() { }
+    func collectionButtonTapped() {
+        navigationController?.pushViewController(StarWarsPeopleViewController(viewModel: .init(layout: .collection)),
+                                                 animated: true)
+    }
 }
