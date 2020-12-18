@@ -29,6 +29,7 @@ class TableCell: UITableViewCell {
     }
 
     func setup() {
+        selectionStyle = .none
         backgroundColor = .clear
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false

@@ -18,12 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         window = UIWindow(windowScene: windowScene)
 
-        let navVC = UINavigationController(rootViewController: MainViewController())
-        navVC.navigationBar.isTranslucent = false
-        navVC.navigationBar.setBackgroundImage(nil,
-                                               for: .default)
-        navVC.navigationBar.shadowImage = UIImage()
-        window?.rootViewController = navVC
+        window?.rootViewController = UINavigationController.createNavigation(with: MainViewController())
         window?.makeKeyAndVisible()
     }
 
