@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3FA38996C8D9A9AAD4C481A3 /* Pods_Skylabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF8EE12DC5E2EB9BECC27F2 /* Pods_Skylabs.framework */; };
 		B209D61C258ADD0C00257607 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209D61B258ADD0C00257607 /* UIImageView+.swift */; };
+		B21CECBC258D48A000B3A30B /* PeopleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECBB258D48A000B3A30B /* PeopleDetailViewController.swift */; };
+		B21CECBF258D48BE00B3A30B /* PeopleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECBE258D48BE00B3A30B /* PeopleDetailViewModel.swift */; };
+		B21CECC3258D4A5200B3A30B /* PeopleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECC2258D4A5200B3A30B /* PeopleDescriptionView.swift */; };
+		B21CECC6258D4A5D00B3A30B /* PeopleDescriptionViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECC5258D4A5D00B3A30B /* PeopleDescriptionViewContent.swift */; };
 		B2401064258A93DB001AAECE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401063258A93DB001AAECE /* MainViewController.swift */; };
 		B2401069258A947B001AAECE /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401068258A947B001AAECE /* FillButton.swift */; };
 		B240106E258A9561001AAECE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240106D258A9561001AAECE /* UIView+.swift */; };
@@ -45,6 +49,10 @@
 		4FF8EE12DC5E2EB9BECC27F2 /* Pods_Skylabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skylabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB4856CB384116221C5954B /* Pods-Skylabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skylabs.release.xcconfig"; path = "Target Support Files/Pods-Skylabs/Pods-Skylabs.release.xcconfig"; sourceTree = "<group>"; };
 		B209D61B258ADD0C00257607 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		B21CECBB258D48A000B3A30B /* PeopleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailViewController.swift; sourceTree = "<group>"; };
+		B21CECBE258D48BE00B3A30B /* PeopleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailViewModel.swift; sourceTree = "<group>"; };
+		B21CECC2258D4A5200B3A30B /* PeopleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDescriptionView.swift; sourceTree = "<group>"; };
+		B21CECC5258D4A5D00B3A30B /* PeopleDescriptionViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDescriptionViewContent.swift; sourceTree = "<group>"; };
 		B2401063258A93DB001AAECE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2401068258A947B001AAECE /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
 		B240106D258A9561001AAECE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -109,9 +117,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B21CECBA258D489100B3A30B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B21CECC1258D4A4100B3A30B /* Views */,
+				B21CECBB258D48A000B3A30B /* PeopleDetailViewController.swift */,
+				B21CECBE258D48BE00B3A30B /* PeopleDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B21CECC1258D4A4100B3A30B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B21CECC2258D4A5200B3A30B /* PeopleDescriptionView.swift */,
+				B21CECC5258D4A5D00B3A30B /* PeopleDescriptionViewContent.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B2401061258A93C5001AAECE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B21CECBA258D489100B3A30B /* Detail */,
 				B2401062258A93CB001AAECE /* Main */,
 				B2401073258A978B001AAECE /* StarWarsPeople */,
 			);
@@ -400,14 +428,18 @@
 				B2E65E62258984F20014F696 /* HTTPMethod.swift in Sources */,
 				B240106E258A9561001AAECE /* UIView+.swift in Sources */,
 				B2401076258A97AC001AAECE /* StarWarsPeopleViewController.swift in Sources */,
+				B21CECBF258D48BE00B3A30B /* PeopleDetailViewModel.swift in Sources */,
 				B2401064258A93DB001AAECE /* MainViewController.swift in Sources */,
 				B2E65E8325898B740014F696 /* StarwarsLogic.swift in Sources */,
 				B24010AC258AAE1A001AAECE /* StarWarsPeopleViewController+UICollectionView.swift in Sources */,
+				B21CECC6258D4A5D00B3A30B /* PeopleDescriptionViewContent.swift in Sources */,
 				B2E65E69258984F20014F696 /* ServiceProtocol.swift in Sources */,
 				B2E65E61258984F20014F696 /* ParametersEncoding.swift in Sources */,
 				B2E65E6A258984F20014F696 /* StarWarsProtocol.swift in Sources */,
 				B2E65E65258984F20014F696 /* URLSessionProvider.swift in Sources */,
 				B24010B2258AAE27001AAECE /* CollectionCell.swift in Sources */,
+				B21CECBC258D48A000B3A30B /* PeopleDetailViewController.swift in Sources */,
+				B21CECC3258D4A5200B3A30B /* PeopleDescriptionView.swift in Sources */,
 				B209D61C258ADD0C00257607 /* UIImageView+.swift in Sources */,
 				B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */,
 				B2E65E74258985E00014F696 /* NetworkError.swift in Sources */,

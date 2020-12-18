@@ -1,3 +1,5 @@
+import Foundation
+
 enum PeopleLayout {
     case list
     case collection
@@ -7,6 +9,7 @@ class StarWarsPeopleViewModel {
     let layout: PeopleLayout
     var people = [People]()
     var next: String?
+    let dispatchGroup = DispatchGroup()
 
     init(layout: PeopleLayout) {
         self.layout = layout

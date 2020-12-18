@@ -41,6 +41,7 @@ class StarWarsPeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Starwars People"
         view.backgroundColor = .white
         setupUI()
         updateData()

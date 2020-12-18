@@ -19,5 +19,7 @@ extension StarWarsPeopleViewController: UITableViewDelegate, UITableViewDataSour
         checkforUpdate(with: indexPath)
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
