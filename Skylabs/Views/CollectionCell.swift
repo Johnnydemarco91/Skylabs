@@ -11,7 +11,6 @@ class CollectionCell: UICollectionViewCell {
     }()
     let stackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         return stackView
     }()
@@ -26,7 +25,6 @@ class CollectionCell: UICollectionViewCell {
     let avatarView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
 
@@ -44,7 +42,6 @@ class CollectionCell: UICollectionViewCell {
 
         stackView.addArrangedSubview(avatarView)
         stackView.addArrangedSubview(titleLabel)
-
         addContentView(containerView)
         containerView.addContentView(stackView)
     }
@@ -53,7 +50,6 @@ class CollectionCell: UICollectionViewCell {
 extension CollectionCell {
     func configure(from people: People) {
         avatarView.setPeopleAvatar(from: people.id)
-        
         titleLabel.text = people.name
     }
 }

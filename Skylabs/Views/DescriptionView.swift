@@ -3,7 +3,6 @@ import UIKit
 class DescriptionView: UIView {
     private let stackView: UIStackView = {
         let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         return stack
     }()

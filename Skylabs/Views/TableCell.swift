@@ -18,12 +18,10 @@ class TableCell: UITableViewCell {
                                     left: 0,
                                     bottom: 16,
                                     right: 0)
-        stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
     let titleLabel: UILabel = {
         let label = TitleLabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000),
                                                       for: .horizontal)
@@ -32,7 +30,6 @@ class TableCell: UITableViewCell {
     let avatarView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         return imageView
     }()

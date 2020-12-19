@@ -3,7 +3,6 @@ import UIKit
 extension DetailContainerView {
     func configureVehicles(with descriptionContents: [VehicleViewContent]) {
         descriptionContents.forEach {
-//            nome, modello, produttore, costo, lunghezza
             stackView.addArrangedSubview(DescriptionView(viewContent: .init(title: "Name",
                                                                             description: $0.name)))
             stackView.addArrangedSubview(DescriptionView(viewContent: .init(title: "Model",
