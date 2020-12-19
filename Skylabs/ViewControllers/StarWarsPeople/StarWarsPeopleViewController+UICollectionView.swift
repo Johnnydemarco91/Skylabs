@@ -20,6 +20,10 @@ extension StarWarsPeopleViewController: UICollectionViewDelegate, UICollectionVi
         checkforUpdate(with: indexPath)
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        showDetail(for: viewModel.people[indexPath.row])
+    }
+
 }
 
 extension StarWarsPeopleViewController: UICollectionViewDelegateFlowLayout {

@@ -2,6 +2,9 @@ import UIKit
 
 extension DetailContainerView {
     func configureDescription(with descriptionContent: PeopleDescriptionViewContent) {
+        let avatarView = UIImageView()
+        avatarView.contentMode = .scaleAspectFit
+        avatarView.translatesAutoresizingMaskIntoConstraints = false
         avatarView.setPeopleAvatar(from: descriptionContent.id)
         stackView.addArrangedSubview(avatarView)
         stackView.addArrangedSubview(DescriptionView(viewContent: .init(title: "Birthday",

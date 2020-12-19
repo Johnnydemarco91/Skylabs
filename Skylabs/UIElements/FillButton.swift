@@ -14,6 +14,7 @@ class FillButton: UIButton {
     private func setup() {
         backgroundColor = .blue
         titleLabel?.textColor = .white
+        layer.cornerRadius = 16
         heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 }

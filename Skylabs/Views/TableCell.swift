@@ -2,6 +2,25 @@ import Kingfisher
 
 class TableCell: UITableViewCell {
 
+    let containerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 8
+        view.layer.borderWidth = 1
+        return view
+    }()
+    let stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.spacing = 16
+        stack.isLayoutMarginsRelativeArrangement = true
+        stack.layoutMargins = .init(top: 16,
+                                    left: 0,
+                                    bottom: 16,
+                                    right: 0)
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
     let titleLabel: UILabel = {
         let label = TitleLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -10,7 +29,6 @@ class TableCell: UITableViewCell {
                                                       for: .horizontal)
         return label
     }()
-
     let avatarView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -31,19 +49,6 @@ class TableCell: UITableViewCell {
     func setup() {
         selectionStyle = .none
         backgroundColor = .clear
-        let containerView = UIView()
-        containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = .white
-        containerView.layer.cornerRadius = 8
-        containerView.layer.borderWidth = 1
-        let stackView = UIStackView()
-        stackView.spacing = 16
-        stackView.isLayoutMarginsRelativeArrangement = true
-        stackView.layoutMargins = .init(top: 16,
-                                        left: 0,
-                                        bottom: 16,
-                                        right: 0)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(avatarView)
         stackView.addArrangedSubview(titleLabel)
 

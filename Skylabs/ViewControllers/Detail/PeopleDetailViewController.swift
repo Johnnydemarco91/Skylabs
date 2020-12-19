@@ -90,6 +90,17 @@ class PeopleDetailViewController: UIViewController {
         dismiss(animated: true)
     }
 
+    @objc
+    func selectedSegmentControl(_ sender: UISegmentedControl) {
+        guard let detail = SegmentedControlDetail(rawValue: sender.selectedSegmentIndex) else {
+            return
+        }
+        handleContainerView(for: detail)
+    }
+}
+
+// MARK: - ContainerView
+extension PeopleDetailViewController {
     func handleContainerView(for detail: SegmentedControlDetail) {
         containerView.subviews.forEach { $0.removeFromSuperview() }
         let detailContainerView = DetailContainerView()
@@ -99,7 +110,9 @@ class PeopleDetailViewController: UIViewController {
             containerView.addContentView(detailContainerView)
         case .films:
             guard viewModel.films != nil else {
+                showLoading()
                 viewModel.prepareFilms {
+                    self.hideLoading()
                     self.configureFilms(for: detailContainerView)
                 }
                 return
@@ -122,7 +135,7 @@ class PeopleDetailViewController: UIViewController {
     func configureFilms(for view: DetailContainerView) {
         var contents = [FilmViewContent]()
         viewModel.films?.forEach { contents.append(.init(title: $0.title,
-                                                         releaseDate: $0.releaseDate.year ?? "N/A",
+                                                         releaseDate: $0.releaseDate.year ?? "n/a",
                                                          openingCrawl: $0.openingCrawl)) }
         view.configureFilms(with: contents)
         containerView.addContentView(view)
@@ -133,13 +146,5 @@ class PeopleDetailViewController: UIViewController {
         viewModel.vehicles?.forEach { contents.append(VehicleViewContent.create(from: $0)) }
         view.configureVehicles(with: contents)
         containerView.addContentView(view)
-    }
-
-    @objc
-    func selectedSegmentControl(_ sender: UISegmentedControl) {
-        guard let detail = SegmentedControlDetail(rawValue: sender.selectedSegmentIndex) else {
-            return
-        }
-        handleContainerView(for: detail)
     }
 }

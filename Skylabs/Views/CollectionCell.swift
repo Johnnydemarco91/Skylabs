@@ -1,6 +1,20 @@
 import UIKit
 
 class CollectionCell: UICollectionViewCell {
+    let containerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 8
+        view.layer.borderWidth = 1
+        return view
+    }()
+    let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        return stackView
+    }()
     let titleLabel: UILabel = {
         let label = TitleLabel()
         label.numberOfLines = 0
@@ -9,7 +23,6 @@ class CollectionCell: UICollectionViewCell {
                                                       for: .vertical)
         return label
     }()
-
     let avatarView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -28,20 +41,12 @@ class CollectionCell: UICollectionViewCell {
 
     func setup() {
         backgroundColor = .clear
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
+
         stackView.addArrangedSubview(avatarView)
         stackView.addArrangedSubview(titleLabel)
 
-        addSubview(stackView)
-
-        NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
+        addContentView(containerView)
+        containerView.addContentView(stackView)
     }
 }
 

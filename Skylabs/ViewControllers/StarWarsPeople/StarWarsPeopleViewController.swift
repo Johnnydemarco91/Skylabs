@@ -97,3 +97,13 @@ class StarWarsPeopleViewController: UIViewController {
         updateData()
     }
 }
+
+extension StarWarsPeopleViewController {
+    func showDetail(for people: People) {
+        let detail = PeopleDetailViewController(viewModel: .init(people: people))
+        let navVC = UINavigationController.createNavigation(with: detail)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC,
+                     animated: true)
+    }
+}

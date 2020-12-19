@@ -13,13 +13,6 @@ class DetailContainerView: UIScrollView {
         return stack
     }()
 
-    let avatarView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -28,7 +21,6 @@ class DetailContainerView: UIScrollView {
         super.init(frame: frame)
         setup()
     }
-
 
     private func setup() {
         addContentView(stackView)
