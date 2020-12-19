@@ -2,7 +2,7 @@ import UIKit
 
 extension StarWarsPeopleViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.people.count
+        viewModel.showableList == .generic ? viewModel.people.list.count : viewModel.filteredPeople.list.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -12,7 +12,9 @@ extension StarWarsPeopleViewController: UICollectionViewDelegate, UICollectionVi
                                      for: indexPath) as? CollectionCell else {
             return UICollectionViewCell()
         }
-        collectionCell.configure(from: viewModel.people[indexPath.row])
+        collectionCell.configure(from: viewModel.showableList == .generic ?
+                                    viewModel.people.list[indexPath.row] :
+                                    viewModel.filteredPeople.list[indexPath.row])
         return collectionCell
     }
 
@@ -21,7 +23,9 @@ extension StarWarsPeopleViewController: UICollectionViewDelegate, UICollectionVi
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        showDetail(for: viewModel.people[indexPath.row])
+        showDetail(for: viewModel.showableList == .generic ?
+                    viewModel.people.list[indexPath.row] :
+                    viewModel.filteredPeople.list[indexPath.row])
     }
 
 }
