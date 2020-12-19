@@ -112,8 +112,8 @@ extension StarWarsPeopleViewController {
                 case .success:
                     self.tableView.reloadData()
                     self.collectionView.reloadData()
-                case .failure:
-                    #warning("show error")
+                case .failure(let error):
+                    self.showEmptyView(with: error.description)
                 }
             }
             return
@@ -125,8 +125,8 @@ extension StarWarsPeopleViewController {
             case .success:
                 self.tableView.reloadData()
                 self.collectionView.reloadData()
-            case .failure:
-                #warning("show error")
+            case .failure(let error):
+                self.showEmptyView(with: error.description)
             }
         }
     }
@@ -149,6 +149,13 @@ extension StarWarsPeopleViewController {
         viewModel.showableList == .filtered &&
             row == viewModel.filteredPeople.list.count - 1 &&
             viewModel.filteredPeople.next != nil
+    }
+
+    private func showEmptyView(with error: String) {
+        let emptyView = EmptyView.create(title: "Error found",
+                                         description: error)
+        self.tableView.backgroundView = emptyView
+        self.collectionView.backgroundView = emptyView
     }
 }
 

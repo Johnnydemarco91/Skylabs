@@ -133,17 +133,35 @@ extension PersonDetailViewController {
     }
 
     func configureFilms(for view: DetailContainerView) {
+        guard
+            let films = viewModel.films,
+            !films.isEmpty
+        else {
+            let emptyView = EmptyView.create(title: "No Data",
+                                             description: "There isn't data.")
+            containerView.addContentView(emptyView)
+            return
+        }
         var contents = [FilmViewContent]()
-        viewModel.films?.forEach { contents.append(.init(title: $0.title,
-                                                         releaseDate: $0.releaseDate.year ?? "n/a",
-                                                         openingCrawl: $0.openingCrawl)) }
+        films.forEach { contents.append(.init(title: $0.title,
+                                              releaseDate: $0.releaseDate.year ?? "n/a",
+                                              openingCrawl: $0.openingCrawl)) }
         view.configureFilms(with: contents)
         containerView.addContentView(view)
     }
 
     func configureVehicles(for view: DetailContainerView) {
+        guard
+            let vehicles = viewModel.vehicles,
+            !vehicles.isEmpty
+        else {
+            let emptyView = EmptyView.create(title: "No Data",
+                                             description: "There isn't data.")
+            containerView.addContentView(emptyView)
+            return
+        }
         var contents = [VehicleViewContent]()
-        viewModel.vehicles?.forEach { contents.append(VehicleViewContent.create(from: $0)) }
+        vehicles.forEach { contents.append(VehicleViewContent.create(from: $0)) }
         view.configureVehicles(with: contents)
         containerView.addContentView(view)
     }

@@ -2,7 +2,17 @@ import UIKit
 
 extension StarWarsPeopleViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.showableList == .generic ? viewModel.people.list.count : viewModel.filteredPeople.list.count
+        let emptyView = EmptyView.create(title: "No Data",
+                                         description: "There isn't data.")
+
+        switch viewModel.showableList {
+        case .generic:
+            collectionView.backgroundView = viewModel.people.list.isEmpty ? emptyView : nil
+            return viewModel.people.list.count
+        case .filtered:
+            collectionView.backgroundView = viewModel.filteredPeople.list.isEmpty ? emptyView : nil
+            return viewModel.filteredPeople.list.count
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

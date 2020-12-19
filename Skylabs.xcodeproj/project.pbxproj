@@ -21,6 +21,7 @@
 		B21CECE0258E17EE00B3A30B /* DetailContainerView+Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */; };
 		B21CECE4258E1E7200B3A30B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECE3258E1E7200B3A30B /* LoadingView.swift */; };
 		B21CECE7258E200800B3A30B /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECE6258E200800B3A30B /* UIViewController+.swift */; };
+		B21CECF0258E696F00B3A30B /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECEF258E696F00B3A30B /* EmptyView.swift */; };
 		B2401064258A93DB001AAECE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401063258A93DB001AAECE /* MainViewController.swift */; };
 		B2401069258A947B001AAECE /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401068258A947B001AAECE /* FillButton.swift */; };
 		B240106E258A9561001AAECE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240106D258A9561001AAECE /* UIView+.swift */; };
@@ -69,6 +70,7 @@
 		B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailContainerView+Vehicles.swift"; sourceTree = "<group>"; };
 		B21CECE3258E1E7200B3A30B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B21CECE6258E200800B3A30B /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		B21CECEF258E696F00B3A30B /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		B2401063258A93DB001AAECE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2401068258A947B001AAECE /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
 		B240106D258A9561001AAECE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				B24010B0258AAE27001AAECE /* CollectionCell.swift */,
 				B21CECCE258D5AEB00B3A30B /* DescriptionView.swift */,
+				B21CECEF258E696F00B3A30B /* EmptyView.swift */,
 				B21CECE3258E1E7200B3A30B /* LoadingView.swift */,
 				B24010B1258AAE27001AAECE /* TableCell.swift */,
 			);
@@ -470,6 +473,7 @@
 				B21CECC3258D4A5200B3A30B /* DetailContainerView.swift in Sources */,
 				B21CECD3258D60B700B3A30B /* UINavigationController+.swift in Sources */,
 				B209D61C258ADD0C00257607 /* UIImageView+.swift in Sources */,
+				B21CECF0258E696F00B3A30B /* EmptyView.swift in Sources */,
 				B2E65E68258984F20014F696 /* DefaultConfigurator.swift in Sources */,
 				B2E65E74258985E00014F696 /* NetworkError.swift in Sources */,
 				B24010B3258AAE27001AAECE /* TableCell.swift in Sources */,

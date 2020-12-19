@@ -14,9 +14,17 @@ extension StarWarsPeopleViewController: UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        viewModel.showableList == .generic ?
-            viewModel.people.list.count :
-            viewModel.filteredPeople.list.count
+        let emptyView = EmptyView.create(title: "No Data",
+                                         description: "There isn't data.")
+
+        switch viewModel.showableList {
+        case .generic:
+            tableView.backgroundView = viewModel.people.list.isEmpty ? emptyView : nil
+            return viewModel.people.list.count
+        case .filtered:
+            tableView.backgroundView = viewModel.filteredPeople.list.isEmpty ? emptyView : nil
+            return viewModel.filteredPeople.list.count
+        }
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
