@@ -7,7 +7,7 @@ enum PeopleLayout {
 
 class StarWarsPeopleViewModel {
     let layout: PeopleLayout
-    var people = [People]()
+    var people = [Person]()
     var next: String?
 
     init(layout: PeopleLayout) {

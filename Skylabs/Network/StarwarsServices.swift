@@ -1,7 +1,7 @@
 import Foundation
 
 struct PeopleService: StarWarsProtocol {
-    typealias ResponseModel = PeopleResponse<[People]>
+    typealias ResponseModel = PeopleResponse<[Person]>
     var method: HTTPMethod = .get
     var path: [String] = ["people"]
     var queryItems: Parameters?

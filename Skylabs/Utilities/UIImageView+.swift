@@ -1,7 +1,7 @@
 import Kingfisher
 
 extension UIImageView {
-    func setPeopleAvatar(from id: Int?) {
+    func setPersonAvatar(from id: Int?) {
         guard
             let id = id,
             let url = URL(string: "http://mobile.aws.skylabs.it/mobileassignments/swapi/\(id).png")

@@ -1,6 +1,6 @@
 import Foundation
 
-struct People: Codable {
+struct Person: Codable {
     var id: Int? {
         guard let url = URL(string: url) else {
             return nil

@@ -1,4 +1,4 @@
-struct PeopleDescriptionViewContent {
+struct PersonDescriptionViewContent {
     let id: Int?
     let height: String
     let mass: String
@@ -6,13 +6,13 @@ struct PeopleDescriptionViewContent {
     let birthyear: String
     let hairColor: String
 
-    static func create(from people: People) -> PeopleDescriptionViewContent {
-        .init(id: people.id,
-              height: people.height,
-              mass: people.mass,
-              gender: people.gender,
-              birthyear: people.birthYear,
-              hairColor: people.hairColor)
+    static func create(from person: Person) -> PersonDescriptionViewContent {
+        .init(id: person.id,
+              height: person.height,
+              mass: person.mass,
+              gender: person.gender,
+              birthyear: person.birthYear,
+              hairColor: person.hairColor)
     }
 }
 

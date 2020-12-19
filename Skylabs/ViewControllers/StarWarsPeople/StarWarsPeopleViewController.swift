@@ -99,8 +99,8 @@ class StarWarsPeopleViewController: UIViewController {
 }
 
 extension StarWarsPeopleViewController {
-    func showDetail(for people: People) {
-        let detail = PeopleDetailViewController(viewModel: .init(people: people))
+    func showDetail(for person: Person) {
+        let detail = PersonDetailViewController(viewModel: .init(person: person))
         let navVC = UINavigationController.createNavigation(with: detail)
         navVC.modalPresentationStyle = .fullScreen
         self.present(navVC,

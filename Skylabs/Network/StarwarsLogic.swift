@@ -2,7 +2,7 @@ import Foundation
 
 struct StarWarsLogic {
     static func getPeopleResponse(queryParameters: [String: String]? = nil,
-                                  completion: @escaping (Result<PeopleResponse<[People]>, NetworkError>) -> Void) {
+                                  completion: @escaping (Result<PeopleResponse<[Person]>, NetworkError>) -> Void) {
         DefaultConfigurator.default.request(service: PeopleService(queryItems: queryParameters)) { result in
             switch result {
             case .success(let data):

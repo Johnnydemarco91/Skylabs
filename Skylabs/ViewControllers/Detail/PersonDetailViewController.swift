@@ -35,9 +35,9 @@ class PersonDetailViewController: UIViewController {
         return scroll
     }()
 
-    let viewModel: PeopleDetailViewModel
+    let viewModel: PersonDetailViewModel
 
-    init(viewModel: PeopleDetailViewModel) {
+    init(viewModel: PersonDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil,
                    bundle: nil)
@@ -106,7 +106,7 @@ extension PersonDetailViewController {
         let detailContainerView = DetailContainerView()
         switch detail {
         case .description:
-            detailContainerView.configureDescription(with: PeopleDescriptionViewContent.create(from: viewModel.person))
+            detailContainerView.configureDescription(with: PersonDescriptionViewContent.create(from: viewModel.person))
             containerView.addContentView(detailContainerView)
         case .films:
             guard viewModel.films != nil else {

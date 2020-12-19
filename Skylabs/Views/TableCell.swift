@@ -66,9 +66,9 @@ class TableCell: UITableViewCell {
 }
 
 extension TableCell {
-    func configure(from people: People) {
-        avatarView.setPeopleAvatar(from: people.id)
-        titleLabel.text = people.name
+    func configure(from person: Person) {
+        avatarView.setPersonAvatar(from: person.id)
+        titleLabel.text = person.name
     }
 }
 

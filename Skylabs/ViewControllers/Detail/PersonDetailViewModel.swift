@@ -1,22 +1,22 @@
 import Foundation
 
-class PeopleDetailViewModel {
-    let people: People
+class PersonDetailViewModel {
+    let person: Person
     var films: [Film]?
     var vehicles: [Vehicle]?
     let dispatchGroup = DispatchGroup()
 
-    init(people: People,
+    init(person: Person,
          films: [Film]? = nil,
          vehicles: [Vehicle]? = nil) {
-        self.people = people
+        self.person = person
         self.films = films
         self.vehicles = vehicles
     }
 
     func prepareFilms(completion: @escaping (() -> Void)) {
         var films = [Film]()
-        people.films.forEach {
+        person.films.forEach {
             guard let url = URL(string: $0) else {
                 return
             }
@@ -39,7 +39,7 @@ class PeopleDetailViewModel {
 
     func prepareVehicles(completion: @escaping (() -> Void)) {
         var vehicles = [Vehicle]()
-        people.vehicles.forEach {
+        person.vehicles.forEach {
             guard let url = URL(string: $0) else {
                 return
             }
