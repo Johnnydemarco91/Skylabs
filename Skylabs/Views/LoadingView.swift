@@ -22,7 +22,7 @@ class LoadingView: UIView {
 
     func setup() {
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = UIColor.white.withAlphaComponent(0.85)
+        backgroundColor = UIColor.white.withAlphaComponent(0.95)
         addSubview(activityIndicator)
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),

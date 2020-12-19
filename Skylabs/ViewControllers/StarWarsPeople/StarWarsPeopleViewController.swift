@@ -43,12 +43,12 @@ class StarWarsPeopleViewController: UIViewController {
         super.viewDidLoad()
 
         extendedLayoutIncludesOpaqueBars = true
-        title = "Starwars People"
+        title = "People"
         view.backgroundColor = .white
         setupUI()
         updateData()
-        setupNavigation()
         prepareSearch()
+        setupNavigation()
     }
 
     private func setupNavigation() {
@@ -58,8 +58,8 @@ class StarWarsPeopleViewController: UIViewController {
         button.addTarget(self,
                          action: #selector(filter(_:)),
                          for: .touchUpInside)
-        button.widthAnchor.constraint(equalToConstant: 44).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 30).isActive = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
     }
 
@@ -197,7 +197,7 @@ extension StarWarsPeopleViewController {
             return
         }
         button.transform3D =
-            CATransform3DMakeRotation(0, 0, 1.0, 0)
+            CATransform3DMakeRotation(0, 0, 1, 0)
     }
 }
 

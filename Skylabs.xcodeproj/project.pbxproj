@@ -140,12 +140,12 @@
 			children = (
 				B21CECBB258D48A000B3A30B /* PersonDetailViewController.swift */,
 				B21CECBE258D48BE00B3A30B /* PersonDetailViewModel.swift */,
-				B21CECC1258D4A4100B3A30B /* Views */,
+				B21CECC1258D4A4100B3A30B /* DetailContainerViews */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		B21CECC1258D4A4100B3A30B /* Views */ = {
+		B21CECC1258D4A4100B3A30B /* DetailContainerViews */ = {
 			isa = PBXGroup;
 			children = (
 				B21CECC2258D4A5200B3A30B /* DetailContainerView.swift */,
@@ -154,7 +154,7 @@
 				B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */,
 				B21CECC5258D4A5D00B3A30B /* ViewContents.swift */,
 			);
-			path = Views;
+			path = DetailContainerViews;
 			sourceTree = "<group>";
 		};
 		B2401061258A93C5001AAECE /* ViewControllers */ = {
