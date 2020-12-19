@@ -14,6 +14,10 @@ extension DetailContainerView {
                                                                         description: descriptionContent.gender)))
         stackView.addArrangedSubview(DescriptionView(viewContent: .init(title: "Hair Color",
                                                                         description: descriptionContent.hairColor)))
+        let separator = UIView()
+        separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        separator.backgroundColor = .gray
+        stackView.addArrangedSubview(separator)
         stackView.addArrangedSubview(UIView())
     }
 }

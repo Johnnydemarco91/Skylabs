@@ -16,6 +16,11 @@
 		B21CECCB258D59F300B3A30B /* DetailContainerView+PeopleDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECCA258D59F300B3A30B /* DetailContainerView+PeopleDescription.swift */; };
 		B21CECCF258D5AEB00B3A30B /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECCE258D5AEB00B3A30B /* DescriptionView.swift */; };
 		B21CECD3258D60B700B3A30B /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECD2258D60B700B3A30B /* UINavigationController+.swift */; };
+		B21CECD7258D63F100B3A30B /* DetailContainerView+Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECD6258D63F100B3A30B /* DetailContainerView+Films.swift */; };
+		B21CECDC258DFBE000B3A30B /* UILabels+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECDB258DFBE000B3A30B /* UILabels+.swift */; };
+		B21CECE0258E17EE00B3A30B /* DetailContainerView+Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */; };
+		B21CECE4258E1E7200B3A30B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECE3258E1E7200B3A30B /* LoadingView.swift */; };
+		B21CECE7258E200800B3A30B /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CECE6258E200800B3A30B /* UIViewController+.swift */; };
 		B2401064258A93DB001AAECE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401063258A93DB001AAECE /* MainViewController.swift */; };
 		B2401069258A947B001AAECE /* FillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2401068258A947B001AAECE /* FillButton.swift */; };
 		B240106E258A9561001AAECE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240106D258A9561001AAECE /* UIView+.swift */; };
@@ -59,6 +64,11 @@
 		B21CECCA258D59F300B3A30B /* DetailContainerView+PeopleDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailContainerView+PeopleDescription.swift"; sourceTree = "<group>"; };
 		B21CECCE258D5AEB00B3A30B /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		B21CECD2258D60B700B3A30B /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		B21CECD6258D63F100B3A30B /* DetailContainerView+Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailContainerView+Films.swift"; sourceTree = "<group>"; };
+		B21CECDB258DFBE000B3A30B /* UILabels+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabels+.swift"; sourceTree = "<group>"; };
+		B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailContainerView+Vehicles.swift"; sourceTree = "<group>"; };
+		B21CECE3258E1E7200B3A30B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B21CECE6258E200800B3A30B /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		B2401063258A93DB001AAECE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2401068258A947B001AAECE /* FillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillButton.swift; sourceTree = "<group>"; };
 		B240106D258A9561001AAECE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
@@ -137,8 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				B21CECC2258D4A5200B3A30B /* DetailContainerView.swift */,
-				B21CECC5258D4A5D00B3A30B /* ViewContents.swift */,
+				B21CECD6258D63F100B3A30B /* DetailContainerView+Films.swift */,
 				B21CECCA258D59F300B3A30B /* DetailContainerView+PeopleDescription.swift */,
+				B21CECDF258E17EE00B3A30B /* DetailContainerView+Vehicles.swift */,
+				B21CECC5258D4A5D00B3A30B /* ViewContents.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				B2401068258A947B001AAECE /* FillButton.swift */,
+				B21CECDB258DFBE000B3A30B /* UILabels+.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -176,6 +189,7 @@
 				B209D61B258ADD0C00257607 /* UIImageView+.swift */,
 				B21CECD2258D60B700B3A30B /* UINavigationController+.swift */,
 				B240106D258A9561001AAECE /* UIView+.swift */,
+				B21CECE6258E200800B3A30B /* UIViewController+.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 			children = (
 				B24010B0258AAE27001AAECE /* CollectionCell.swift */,
 				B21CECCE258D5AEB00B3A30B /* DescriptionView.swift */,
+				B21CECE3258E1E7200B3A30B /* LoadingView.swift */,
 				B24010B1258AAE27001AAECE /* TableCell.swift */,
 			);
 			path = Views;
@@ -431,14 +446,17 @@
 			files = (
 				B2401079258A97B8001AAECE /* StarWarsPeopleViewModel.swift in Sources */,
 				B2E65E8025898B3F0014F696 /* StarwarsServices.swift in Sources */,
+				B21CECE7258E200800B3A30B /* UIViewController+.swift in Sources */,
 				B24010AD258AAE1A001AAECE /* StarWarsPeopleViewController+UITableView.swift in Sources */,
 				B2E65E66258984F20014F696 /* URLComponentsExtension.swift in Sources */,
 				B278253C25896CC7004F1721 /* AppDelegate.swift in Sources */,
+				B21CECDC258DFBE000B3A30B /* UILabels+.swift in Sources */,
 				B2E65E62258984F20014F696 /* HTTPMethod.swift in Sources */,
 				B240106E258A9561001AAECE /* UIView+.swift in Sources */,
 				B2401076258A97AC001AAECE /* StarWarsPeopleViewController.swift in Sources */,
 				B21CECBF258D48BE00B3A30B /* PeopleDetailViewModel.swift in Sources */,
 				B2401064258A93DB001AAECE /* MainViewController.swift in Sources */,
+				B21CECE4258E1E7200B3A30B /* LoadingView.swift in Sources */,
 				B2E65E8325898B740014F696 /* StarwarsLogic.swift in Sources */,
 				B24010AC258AAE1A001AAECE /* StarWarsPeopleViewController+UICollectionView.swift in Sources */,
 				B21CECC6258D4A5D00B3A30B /* ViewContents.swift in Sources */,
@@ -462,6 +480,8 @@
 				B2E65E67258984F20014F696 /* URLRequestExtension.swift in Sources */,
 				B240107C258A9838001AAECE /* String+.swift in Sources */,
 				B21CECCF258D5AEB00B3A30B /* DescriptionView.swift in Sources */,
+				B21CECE0258E17EE00B3A30B /* DetailContainerView+Vehicles.swift in Sources */,
+				B21CECD7258D63F100B3A30B /* DetailContainerView+Films.swift in Sources */,
 				B278253E25896CC7004F1721 /* SceneDelegate.swift in Sources */,
 				B2E65E6D258984F20014F696 /* ProviderProtocol.swift in Sources */,
 			);

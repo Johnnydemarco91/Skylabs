@@ -3,7 +3,7 @@ import Kingfisher
 class TableCell: UITableViewCell {
 
     let titleLabel: UILabel = {
-        let label = UILabel()
+        let label = TitleLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000),

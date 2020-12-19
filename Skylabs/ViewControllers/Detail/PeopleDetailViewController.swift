@@ -92,17 +92,47 @@ class PeopleDetailViewController: UIViewController {
 
     func handleContainerView(for detail: SegmentedControlDetail) {
         containerView.subviews.forEach { $0.removeFromSuperview() }
+        let detailContainerView = DetailContainerView()
         switch detail {
         case .description:
-            let descriptionView = DetailContainerView()
-            descriptionView.configureDescription(with: PeopleDescriptionViewContent.create(from: viewModel.people))
-            containerView.addContentView(descriptionView)
-            break
+            detailContainerView.configureDescription(with: PeopleDescriptionViewContent.create(from: viewModel.people))
+            containerView.addContentView(detailContainerView)
         case .films:
-            break
+            guard viewModel.films != nil else {
+                viewModel.prepareFilms {
+                    self.configureFilms(for: detailContainerView)
+                }
+                return
+            }
+            configureFilms(for: detailContainerView)
         case .vehicles:
-            break
+            guard viewModel.vehicles != nil else {
+                showLoading()
+                viewModel.prepareVehicles {
+                    self.hideLoading()
+                    self.configureVehicles(for: detailContainerView)
+                }
+                return
+            }
+            configureVehicles(for: detailContainerView)
         }
+
+    }
+
+    func configureFilms(for view: DetailContainerView) {
+        var contents = [FilmViewContent]()
+        viewModel.films?.forEach { contents.append(.init(title: $0.title,
+                                                         releaseDate: $0.releaseDate.year ?? "N/A",
+                                                         openingCrawl: $0.openingCrawl)) }
+        view.configureFilms(with: contents)
+        containerView.addContentView(view)
+    }
+
+    func configureVehicles(for view: DetailContainerView) {
+        var contents = [VehicleViewContent]()
+        viewModel.vehicles?.forEach { contents.append(VehicleViewContent.create(from: $0)) }
+        view.configureVehicles(with: contents)
+        containerView.addContentView(view)
     }
 
     @objc

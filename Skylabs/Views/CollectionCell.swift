@@ -2,7 +2,7 @@ import UIKit
 
 class CollectionCell: UICollectionViewCell {
     let titleLabel: UILabel = {
-        let label = UILabel()
+        let label = TitleLabel()
         label.numberOfLines = 0
         label.textAlignment = .center
         label.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000),

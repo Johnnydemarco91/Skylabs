@@ -9,7 +9,6 @@ class StarWarsPeopleViewModel {
     let layout: PeopleLayout
     var people = [People]()
     var next: String?
-    let dispatchGroup = DispatchGroup()
 
     init(layout: PeopleLayout) {
         self.layout = layout
@@ -35,44 +34,5 @@ class StarWarsPeopleViewModel {
                 completion(.failure(error))
             }
         }
-    }
-
-//    func prepareFilms(from people: People) {
-//        people.films.forEach {
-//            guard let url = URL(string: $0) else {
-//                return
-//            }
-//            StarWarsLogic.getFilm(baseURL: url) { [unowned self] result in
-//                switch result {
-//                case .success(let film):
-//
-//                case .failure(let error):
-//                    #warning("show error?")
-//                }
-//            }
-//        }
-//    }
-//
-//    func configureVehicles(from people: SWPeople) {
-//        people.vehicles.forEach {
-//            guard let url = URL(string: $0) else {
-//                return
-//            }
-//            StarWarsLogic.getVehicle(baseURL: url) { [unowned self] result in
-//                switch result {
-//                case .success(let film):
-//                    let filmView = FilmView()
-//                    filmView.configure(from: film)
-//                    self.stackView.addArrangedSubview(filmView)
-//                case .failure(let error):
-//                    #warning("show error?")
-//                }
-//            }
-//        }
-//    }
-
-    func prepareForDetail(completion: (PeopleDetailViewModel) -> Void) {
-        dispatchGroup.enter()
-        
     }
 }

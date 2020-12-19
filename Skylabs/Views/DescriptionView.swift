@@ -8,16 +8,15 @@ class DescriptionView: UIView {
         return stack
     }()
 
-    private let horizontalStackView = UIStackView()
-    private let titleLabel = UILabel()
-    private let descriptionLabel = UILabel()
-    private let separatorView: UIView = {
-        let separator = UIView()
-        separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
-        separator.backgroundColor = .gray
-        return separator
-    }()
+    private let containerStackView = UIStackView()
+    private let titleLabel = TitleLabel()
 
+    private let descriptionLabel: UILabel = {
+        let label = DescriptionLabel()
+        label.numberOfLines = 0
+        return label
+    }()
+    
     private let viewContent: DescriptionViewContent
 
     init(viewContent: DescriptionViewContent) {
@@ -33,12 +32,11 @@ class DescriptionView: UIView {
     func setup() {
         titleLabel.text = viewContent.title
         descriptionLabel.text = viewContent.description
-        horizontalStackView.addArrangedSubview(titleLabel)
-        horizontalStackView.addArrangedSubview(UIView())
-        horizontalStackView.addArrangedSubview(descriptionLabel)
+        containerStackView.addArrangedSubview(titleLabel)
+        containerStackView.addArrangedSubview(UIView())
+        containerStackView.addArrangedSubview(descriptionLabel)
         addContentView(stackView)
-        stackView.addArrangedSubview(horizontalStackView)
-        stackView.addArrangedSubview(separatorView)
+        stackView.addArrangedSubview(containerStackView)
     }
 }
 

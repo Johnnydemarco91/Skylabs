@@ -20,12 +20,10 @@ extension StarWarsPeopleViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detail = PeopleDetailViewController(viewModel: .init(people: viewModel.people[indexPath.row],
-                                                                 films: [],
-                                                                 vehicles: []))
+        let detail = PeopleDetailViewController(viewModel: .init(people: viewModel.people[indexPath.row]))
         let navVC = UINavigationController.createNavigation(with: detail)
         navVC.modalPresentationStyle = .fullScreen
-        present(navVC,
-                animated: true)
+        self.present(navVC,
+                     animated: true)
     }
 }

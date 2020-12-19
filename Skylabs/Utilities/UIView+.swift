@@ -8,7 +8,7 @@ extension UIView {
         NSLayoutConstraint.activate([
             subView.topAnchor.constraint(equalTo: topAnchor),
             subView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            subView.leftAnchor.constraint(equalTo: leftAnchor),
-            subView.rightAnchor.constraint(equalTo: rightAnchor)])
+            subView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            subView.trailingAnchor.constraint(equalTo: trailingAnchor)])
     }
 }

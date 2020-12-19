@@ -74,7 +74,9 @@ class StarWarsPeopleViewController: UIViewController {
     }
 
     func updateData() {
+        showLoading()
         viewModel.updatePeople() { result in
+            self.hideLoading()
             switch result {
             case .success:
                 self.tableView.reloadData()
