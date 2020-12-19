@@ -48,8 +48,8 @@ playground.xcworkspace
 
 .build/
 
-Pods/
-*.xcworkspace
+#Pods/
+#*.xcworkspace
 
 # Carthage
 #
